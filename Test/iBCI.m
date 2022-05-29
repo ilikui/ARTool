@@ -1,4 +1,4 @@
-urlApi = 'http://open.iciba1.com/dsapi/';
+urlApi = 'http://open.iciba.com/dsapi/';
 
 
 
