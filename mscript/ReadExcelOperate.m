@@ -1,6 +1,11 @@
+%  Operate Excel
+%
+% 
+
 try
     
-    e = actxserver('Excel.Application');
+    ExcelApp = actxserver('Excel.Application');
+    WorkBook =  ExcelApp.Workbooks;
     
 catch ME
     
@@ -15,5 +20,11 @@ catch ME
     %rethrow(ME);
     
 end
+
+
+
+
+
+get(ExcelApp);
 
     
