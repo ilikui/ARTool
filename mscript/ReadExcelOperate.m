@@ -17,14 +17,39 @@ catch ME
         
         ME=addCause(ME,causeException);
     end
-    %rethrow(ME);
+    
+    % Throw the Exception Cause
+    rethrow(ME);
     
 end
 
 
 
+FilePath=fullfile(pwd,'LockgMgr.xlsx');
+
+ExcelApp.Visible = true;
+
+wdata = WorkBook.Open(FilePath);
+
+sheets = wdata.Sheets;
 
 
-get(ExcelApp);
+sheet12 = Item(sheets,1);
 
-    
+
+disp(sheets.Count);
+
+% disp(wdata.Sheets.Item(1));
+
+
+
+%get(wdata);
+%Close(WorkBook);
+
+%ExcelApp.Quit;  % Kill the Excel Application
+
+
+
+
+
+ % Quit(ExcelApp);  
