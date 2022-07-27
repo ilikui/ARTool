@@ -1,0 +1,1 @@
+struectXml = parseXML('HeatdSteerWhlMaiCtrl.arxml')
